@@ -8,6 +8,7 @@ namespace TelemetryMicroservice.Controllers;
 
 [ApiController]
 [Route("telemetry")]
+[Authorize]
 public class TelemetryController: ControllerBase
 {
     private readonly ITelemetryBusinessLogic telemetryBusinessLogic;

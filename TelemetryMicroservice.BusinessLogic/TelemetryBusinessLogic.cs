@@ -37,7 +37,11 @@ public class TelemetryBusinessLogic: ITelemetryBusinessLogic
         };
 
         var telemetryId =  await telemetryRepository.AddTelemetry(telemetry);
-        await vehiclesService.SendErrorsForVehicle(dto.Errors,dto.VehicleId,token);
+        if (dto.Errors.Count() != 0)
+        {
+            await vehiclesService.SendErrorsForVehicle(dto.Errors,dto.VehicleId,token);
+            
+        }
         if (dto.ActualSpeed == 0 && dto.KilometersSinceStart != 0)
         {
             await analysisService.SendGenerateCommandForAnalysis(dto.VehicleId,token);
