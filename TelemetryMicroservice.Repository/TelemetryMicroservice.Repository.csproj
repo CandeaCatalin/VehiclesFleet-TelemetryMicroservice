@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TelemetryMicroservice.DataAccess\TelemetryMicroservice.DataAccess.csproj" />
+      <ProjectReference Include="..\TelemetryMicroservice.Domain\TelemetryMicroservice.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

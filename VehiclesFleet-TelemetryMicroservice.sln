@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelemetryMicroservice", "TelemetryMicroservice\TelemetryMicroservice.csproj", "{67C8E203-518E-4A89-8F25-F45245B96ECB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelemetryMicroservice.BusinessLogic", "TelemetryMicroservice.BusinessLogic\TelemetryMicroservice.BusinessLogic.csproj", "{E09F716B-F7E2-4571-8FC7-A73307CA6469}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelemetryMicroservice.DataAccess", "TelemetryMicroservice.DataAccess\TelemetryMicroservice.DataAccess.csproj", "{C4037ABE-36D1-44FA-8072-9E556B71ED95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelemetryMicroservice.DI", "TelemetryMicroservice.DI\TelemetryMicroservice.DI.csproj", "{7A3880F7-FC0F-4F13-AF8C-222485E98721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelemetryMicroservice.Domain", "TelemetryMicroservice.Domain\TelemetryMicroservice.Domain.csproj", "{E9D067E3-75DB-4425-A4A5-6F1B39AB3F04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelemetryMicroservice.Repository", "TelemetryMicroservice.Repository\TelemetryMicroservice.Repository.csproj", "{CC245562-DB0B-48C6-8A1F-CC20EBD003F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelemetryMicroservice.Services", "TelemetryMicroservice.Services\TelemetryMicroservice.Services.csproj", "{573EF1BE-CAD3-4C1D-952C-D46C8C32D126}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelemetryMicroservice.Settings", "TelemetryMicroservice.Settings\TelemetryMicroservice.Settings.csproj", "{626C250B-E63F-4783-84E9-FD82D6B81470}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{260A9F94-4BAD-47B2-A7A3-3142505872C2}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67C8E203-518E-4A89-8F25-F45245B96ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C8E203-518E-4A89-8F25-F45245B96ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C8E203-518E-4A89-8F25-F45245B96ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C8E203-518E-4A89-8F25-F45245B96ECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E09F716B-F7E2-4571-8FC7-A73307CA6469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E09F716B-F7E2-4571-8FC7-A73307CA6469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E09F716B-F7E2-4571-8FC7-A73307CA6469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E09F716B-F7E2-4571-8FC7-A73307CA6469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4037ABE-36D1-44FA-8072-9E556B71ED95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4037ABE-36D1-44FA-8072-9E556B71ED95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4037ABE-36D1-44FA-8072-9E556B71ED95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4037ABE-36D1-44FA-8072-9E556B71ED95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A3880F7-FC0F-4F13-AF8C-222485E98721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A3880F7-FC0F-4F13-AF8C-222485E98721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A3880F7-FC0F-4F13-AF8C-222485E98721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A3880F7-FC0F-4F13-AF8C-222485E98721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9D067E3-75DB-4425-A4A5-6F1B39AB3F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9D067E3-75DB-4425-A4A5-6F1B39AB3F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9D067E3-75DB-4425-A4A5-6F1B39AB3F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9D067E3-75DB-4425-A4A5-6F1B39AB3F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC245562-DB0B-48C6-8A1F-CC20EBD003F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC245562-DB0B-48C6-8A1F-CC20EBD003F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC245562-DB0B-48C6-8A1F-CC20EBD003F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC245562-DB0B-48C6-8A1F-CC20EBD003F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{573EF1BE-CAD3-4C1D-952C-D46C8C32D126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{573EF1BE-CAD3-4C1D-952C-D46C8C32D126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{573EF1BE-CAD3-4C1D-952C-D46C8C32D126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{573EF1BE-CAD3-4C1D-952C-D46C8C32D126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{626C250B-E63F-4783-84E9-FD82D6B81470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{626C250B-E63F-4783-84E9-FD82D6B81470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{626C250B-E63F-4783-84E9-FD82D6B81470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{626C250B-E63F-4783-84E9-FD82D6B81470}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

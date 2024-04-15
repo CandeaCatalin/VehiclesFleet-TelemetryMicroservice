@@ -1,0 +1,32 @@
+﻿version: '3.8'
+
+services:
+  telemetrymicroservice:
+    image: telemetrymicroservice
+    build:
+      context: .
+      dockerfile: TelemetryMicroservice/Dockerfile
+    ports:
+      - "3003:80"
+    depends_on:
+      - database
+    networks:
+      vehiclesfleet-logger-net:
+        aliases:
+            - telemetry
+  database:
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      SA_PASSWORD: mHDyhpoc4336HXuF0GYO
+      ACCEPT_EULA: Y
+      MSSQL_PID: Express
+      MSSQL_TCP_PORT: 1437
+      MSSQL_DATABASE: VehiclesFleet
+      MSSQL_PASSWORD: mHDyhpoc4336HXuF0GYO
+    ports:
+      - "1437:1437"
+    networks:
+      vehiclesfleet-logger-net:
+networks:
+  vehiclesfleet-logger-net:
+    external: true
